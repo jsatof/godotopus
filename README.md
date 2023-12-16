@@ -1,6 +1,5 @@
 # Godot Opus integration
-Experimenting and attempting to add opus support to Godot.
 
-
-Opus is installed on system via debian package manager
-- Opus version 1.3.1
+Required versions
+- Godot v4.1.3-stable
+- Opus v1.3.1

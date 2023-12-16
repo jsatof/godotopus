@@ -1,5 +1,6 @@
 #include "register_types.h"
-#include "example.h"
+
+#include "audio_stream_player_opus.h"
 
 #include <gdextension_interface.h>
 #include <godot_cpp/core/defs.hpp>
@@ -12,7 +13,7 @@ void init_opus_module(ModuleInitializationLevel p_level) {
 		return;
 	}
 
-	ClassDB::register_class<GDExample>();
+	ClassDB::register_class<AudioStreamPlayerOpus>();
 }
 
 void deinit_opus_module(ModuleInitializationLevel p_level) {
