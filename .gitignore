@@ -1,6 +1,7 @@
 build/
 demo/*.import
 demo/bin
+*.so
 *.os
 .scons*
 *.swo

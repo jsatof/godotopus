@@ -23,14 +23,14 @@ opus_lib = env.Library('opus')
 
 if env["platform"] == "macos":
     library = env.SharedLibrary(
-        "demo/bin/libopusexample.{}.{}.framework/libopusexample.{}.{}".format(
+        "demo/bin/libopus.{}.{}.framework/libopus.{}.{}".format(
             env["platform"], env["target"], env["platform"], env["target"]
         ),
         source=sources,
     )
 else:
     library = env.SharedLibrary(
-        "demo/bin/libopusexample{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        "demo/bin/libopus{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources,
     )
 
